@@ -1,0 +1,31 @@
+$h1-color: #fff;
+$blue: #22678c;
+$fz: 50px;
+$textdecoration: underline;
+$firstletter: yellow;
+$block-width: 400px;
+$block-border: 1px solid salmon;
+
+h1 {
+  color: $h1-color;
+  background: $blue;
+  font-size: $fz;
+  text-decoration: $textdecoration;
+}
+h1::first-letter {
+  color: $firstletter;
+}
+
+.block {
+  width: $block-width;
+  border: $block-border;
+  .block__item {
+    width: 100%;
+    border: 1px solid purple;
+    .link {
+      text-decoration: none;
+      color: $firstletter;
+      font-size: $fz;
+    }
+  }
+}
